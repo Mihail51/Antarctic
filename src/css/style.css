@@ -52,12 +52,22 @@ body {
     font-weight: 600;
     font-style: normal;
     font-display: swap;
+    color: #011C40;
+}
+.caption {
+    font-family: 'montserrat-medium', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 .text {
     font-family: 'montserrat-regular', sans-serif;
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+    color: #011C40;
 }
 
 /* HEADER */
@@ -173,6 +183,46 @@ body {
     line-height: 24px;
 }
 
+/* ADVANTAGE */
+
+.advantages__heading {
+    text-align: center;
+    margin: 120px auto 0;
+}
+.advantages__content {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    align-content: stretch;
+    margin: 60px auto 120px;
+}
+.advantage__description {
+    width: 360px;
+    position: relative;
+    padding: 30px 42px 50px 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: #F9FBFD;
+}
+.advantage__description svg {
+    position: absolute;
+    top: 46px;
+    transform: translateY(-50%);
+}
+.advantage__caption {
+    color: #011C40;
+    margin: 57px auto 20px;
+}
+.advantage__text {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+
 /* FOOTER */
 .basic__footer {
     width: 100%;
@@ -217,3 +267,4 @@ footer .link__logo {
     -ms-align-items: center;
     align-items: center;
 }
+
