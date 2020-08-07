@@ -47,10 +47,21 @@ body {
     width: 1160px;
     margin: 0 auto;
 }
-
+.heading {
+    font-family: 'montserrat-semiBold', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+.text {
+    font-family: 'montserrat-regular', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
 
 /* HEADER */
-.main__header {
+.basic__header {
     position: absolute;
     width: 100%;
     top: 35px;
@@ -74,10 +85,10 @@ body {
     width: 70px;
     height: 38px;
  }
-.menu {
+.menu, .social {
     list-style: none;
 }
-.header__menu li {
+.menu li, .social li {
     display: inline-block;
     margin: 0 16px;
 }
@@ -135,4 +146,74 @@ body {
     font-display: swap;
     color: #F9FBFD;
     margin: 22px 0;
+}
+
+/*  TRAVELS*/
+.travels {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+    margin: 120px auto;
+}
+.travels__description {
+    width: 512px;
+}
+.travels__heading {
+    text-align: left;
+    margin-bottom: 40px;
+}
+.travels__text {
+    text-align: left;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/* FOOTER */
+.basic__footer {
+    width: 100%;
+    height: 138px;
+    background: #011C40;
+    border: .1px solid #011C40;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.footer__content {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+.link__logo, .footer__menu {
+    display: inline-block;
+}
+footer .link__logo {
+    margin-right: 24px;
+}
+.footer__nav {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: flex-start;
+    -ms-align-items: center;
+    align-items: center;
+}
+.footer__social {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
 }
