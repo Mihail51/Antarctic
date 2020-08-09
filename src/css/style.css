@@ -43,6 +43,13 @@ body {
     margin: 0 auto;
     background: #E5E5E5;
 }
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+}
 .conteiner {
     width: 1160px;
     margin: 0 auto;
@@ -74,6 +81,13 @@ body {
     font-style: normal;
     font-display: swap;
 }
+.menu, .social, .contact {
+    list-style: none;
+}
+.menu li, .social li {
+    display: inline-block;
+    margin: 0 16px;
+}
 
 /* HEADER */
 .basic__header {
@@ -100,13 +114,6 @@ body {
     width: 70px;
     height: 38px;
  }
-.menu, .social {
-    list-style: none;
-}
-.menu li, .social li {
-    display: inline-block;
-    margin: 0 16px;
-}
 .header__menu li:first-child {
     margin-left: 0;
 }
@@ -387,6 +394,50 @@ fieldset {
     font-size: 14px;
     line-height: 21px;
     color: #011C40;
+}
+
+
+/* CONTACTS */
+
+.main__contacts {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    justify-content: space-between;
+    -ms-align-items: center;
+    align-items: center;
+    padding: 120px 0;
+}
+.contacts__content {
+    width: 500px;
+}
+.contacts__caption {
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 40px;
+    color: #011C40;
+}
+.contact li {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    color: #011C40;
+}
+.contact li::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 22px;
+    padding-right: 10px;
+    transform: translateY(25%);
+}
+.contact .address::before {
+    background: url(../images/location.svg) no-repeat left center;
+}
+.contact .phone-number::before {
+    background: url(../images/phone.svg) no-repeat left center;
 }
 
 
