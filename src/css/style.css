@@ -485,4 +485,8 @@ footer .link__logo {
     -ms-align-items: center;
     align-items: center;
 }
+.footer__social li a:hover {
+    cursor: pointer;
+    opacity: .7;
+}
 
