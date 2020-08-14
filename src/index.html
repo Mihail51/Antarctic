@@ -5,14 +5,13 @@
 	<title>Круизы в Антарктику</title>
 	<link rel="stylesheet" href="css/normalize.css">  
 	<link rel="stylesheet" href="css/style.css">
-
-	
 </head>
 <body>
 	<header class="basic__header">
 		<nav class="header__nav conteiner">
 			<a href="#" class="link__logo">
-				<object type="image/svg+xml" data="images/logo.svg"></object>
+				<img src="images/logo.svg" width="70" height="38" alt="Логотип">
+<!--				<object type="image/svg+xml" data="images/logo.svg"></object>   -->
 			</a>
 			<ul class="menu header__menu">
 				<li><a href="#" class="menu__item_link">Преимущества </a></li>
@@ -37,24 +36,27 @@
 		</section>
 		<section class="advantages main__advantages">
 			<h2 class="heading advantages__heading">Преимущества</h2>
-			<div class="content advantages__content conteiner">
-				<div class="advantage advantage__description">
-					<object type="image/svg+xml" data="images/liner.svg"></object>
+			<ul class="content advantages__content conteiner">
+				<li class="advantage advantage__description">
+					<img src="images/liner.svg" width="27" height="32" alt="Лайнер">
+<!--					<object type="image/svg+xml" data="images/liner.svg"></object>   -->
 					<h3 class="caption advantage__caption">Небольшой круизный лайнер</h3>
 					<p class="text advantage__text">Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст возможность насладиться видами и природой.</p>
-				</div>
-				<div class="advantage advantage__description">
-					<object type="image/svg+xml" data="images/system.svg"></object>
+				</li>
+				<li class="advantage advantage__description">
+					<img src="images/system.svg" width="38" height="21" alt="Две галочки">
+<!--					<object type="image/svg+xml" data="images/system.svg"></object>   -->
 					<h3 class="caption advantage__caption">Система все включено</h3>
 					<p class="text advantage__text">Все наши круизы работают
 					по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас 24 часа.</p>
-				</div>
-				<div class="advantage advantage__description">
-					<object type="image/svg+xml" data="images/tours.svg"></object>
+				</li>
+				<li class="advantage advantage__description">
+					<img src="images/tours.svg" width="42" height="15" alt="Лодка">
+<!--					<object type="image/svg+xml" data="images/tours.svg"></object>   -->
 					<h3 class="caption advantage__caption">Экскурсионные туры на Zodiac</h3>
 					<p class="text advantage__text">Экскурсионные туры к берегам Антарктиды совершаются на оборудованных лодках типа Zodiac в сопровождении опытных экскурсоводов.</p>
-				</div>
-			</div>
+				</li>
+			</ul>
 		</section>
 		<section class="cruises.main__cruises">
 			<h2 class="heading cruises__heading">Ближайшие круизы</h2>
@@ -210,16 +212,17 @@
 				<div class="description booking__description">
 					<h2 class="title booking__title">Раннее бронирование</h2>
 					<p class="text booking__text">Забронируйте тур за 3-6 месяцев
-						до&nbsp;даты&nbsp;выезда&nbsp;и&nbsp;сэкономьте&nbsp;до 50%</p>
+						до&nbsp;даты&nbsp;выезда&nbsp;и&nbsp;сэкономьте&nbsp;до 50%
+					</p>
 				</div>
 				<form action="#" method="post">
 					<fieldset>
 						<legend class="caption form__caption">Оставьте заявку и мы свяжемся с вами в ближайшее время</legend>
-						<input type="text" class="text" name="username" placeholder="Валерия">
-						<input type="tel" class="text" name="phone-number" placeholder="89236889975">
-						<input type="email" class="text" name="email-address" placeholder="grishaewa.lera@gmail.com">
-						<label class="text form__text"><input type="checkbox" name="consent">&nbsp;&nbsp; Я согласен на обработку моих персональных данных</label>
-						<input type="submit" class="title submit__title" name="submit" value="Оставить заявку">
+						<input type="text" class="text" name="username" placeholder="Валерия" required>
+						<input type="tel" class="text" name="phone-number" placeholder="89236889975" required>
+						<input type="email" class="text" name="email-address" placeholder="grishaewa.lera@gmail.com" required>
+						<label class="text form__text"><input type="checkbox" name="consent" required><span></span>&nbsp;&nbsp; Я согласен на обработку моих персональных данных</label>
+						<input type="submit" class="title submit__title" name="submit" value="Оставить заявку" required>
 					</fieldset>
 				</form>
 			</div>
@@ -236,11 +239,12 @@
 			</div>
 		</section>
 	</main>
-	<footer class="basic__footer">
+	<footer class="basic__footer footer__content conteiner">
 		<div class="content footer__content conteiner">
 			<nav class="footer__nav">
 				<a href="#" class="link__logo">
-					<object type="image/svg+xml" data="images/logo.svg"></object>
+					<img src="images/logo.svg" width="70" height="38" alt="Логотип">
+<!--					<object type="image/svg+xml" data="images/logo.svg"></object>   -->
 				</a>
 				<ul class="menu footer__menu">
 					<li><a href="#" class="menu__item_link">Преимущества </a></li>
@@ -251,22 +255,22 @@
 			</nav>
 			<ul class="social footer__social">
 				<li><a href="#">
-					<object type="image/svg+xml" data="images/fb.svg"></object>
-
-				</a></li>
-				<li><a href="#">
-						<object type="image/svg+xml" data="images/instagram.svg"></object>
+					<img src="images/fb.svg" width="11" height="20" alt="Фэйсбук">
+<!--						<object type="image/svg+xml" data="images/fb.svg"></object>  -->
 					</a>
 				</li>
 				<li><a href="#">
-						<object type="image/svg+xml" data="images/tweeter.svg"></object>
+					<img src="images/instagram.svg" width="20" height="20" alt="Инстаграм">
+<!--						<object type="image/svg+xml" data="images/instagram.svg"></object>  -->
+					</a>
+				</li>
+				<li><a href="#">
+					<img src="images/tweeter.svg" width="20" height="16" alt="Твитер">
+<!--						<object type="image/svg+xml" data="images/tweeter.svg"></object>  -->
 					</a>
 				</li>
 			</ul>
 		</div>
 	</footer>
-
-	
-	
 </body>
 </html>

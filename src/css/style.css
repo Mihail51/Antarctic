@@ -1,14 +1,14 @@
 @font-face {
-    font-family: 'montserrat-bold', sans-serif;
+    font-family: 'montserrat-bold';
     src: url('../fonts/montserrat-bold.woff2') format('woff2'),
         url('../fonts/montserrat-bold.woff') format('woff');
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'montserrat-semiBold', sans-serif;
+    font-family: 'montserrat-semiBold';
     src: url('../fonts/montserrat-semibold.woff2') format('woff2'),
         url('../fonts/montserrat-semibold.woff') format('woff');
     font-weight: 600;
@@ -17,16 +17,16 @@
 }
 
 @font-face {
-    font-family: 'montserrat-regular', sans-serif;
+    font-family: 'montserrat-regular';
     src: url('../fonts/montserrat-regular.woff2') format('woff2'),
         url('../fonts/montserrat-regular.woff') format('woff');
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'montserrat-medium', sans-serif;
+    font-family: 'montserrat-medium';
     src: url('../fonts/montserrat-medium.woff2') format('woff2'),
         url('../fonts/montserrat-medium.woff') format('woff');
     font-weight: 500;
@@ -56,7 +56,7 @@ body {
 }
 .title {
     font-family: 'montserrat-bold', sans-serif;
-    font-weight: bold;
+    font-weight: 700;
     font-style: normal;
     font-display: swap;
 }
@@ -77,7 +77,7 @@ body {
 }
 .text {
     font-family: 'montserrat-regular', sans-serif;
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
 }
@@ -86,6 +86,7 @@ body {
 }
 .menu li, .social li {
     display: inline-block;
+    vertical-align: center;
     margin: 0 16px;
 }
 
@@ -156,10 +157,10 @@ body {
 }
 .subtitle {
     display: block;
-    font-family: 'montserrat-Regular', sans-serif;
+    font-family: 'montserrat-regular', sans-serif;
     font-size: 20px;
     line-height: 24px;
-    font-weight: normal;
+    font-weight: 400;
     font-style: normal;
     font-display: swap;
     color: #F9FBFD;
@@ -212,6 +213,7 @@ body {
     justify-content: space-between;
     align-content: stretch;
     margin: 60px auto 120px;
+    list-style: none;
 }
 .advantage__description {
     width: 360px;
@@ -222,7 +224,7 @@ body {
     box-sizing: border-box;
     background: #F9FBFD;
 }
-.advantage__description svg {
+.advantage__description img {
     position: absolute;
     top: 46px;
     transform: translateY(-50%);
@@ -374,9 +376,27 @@ fieldset {
 [name="submit"] {
     cursor: pointer;
 }
+/*
 [name="consent"] {
     transform: scale(1.6);
     margin: 10px auto;
+}
+*/
+.form__text input {
+    visibility: hidden;
+    margin-right: -16px;
+}
+.form__text input+span {
+    display: inline-block;
+    vertical-align: center;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #000;
+    background: #F9FBFD;
+    margin: -5px auto;
+}
+.form__text input:checked+span {
+    background: url(../images/angle.svg) no-repeat center center #F9FBFD;
 }
 .form__caption {
     font-size: 18px;
@@ -428,6 +448,7 @@ fieldset {
 .contact li::before {
     content: "";
     display: inline-block;
+    vertical-align: center;
     width: 18px;
     height: 22px;
     padding-right: 10px;
@@ -462,6 +483,7 @@ fieldset {
 }
 .link__logo, .footer__menu {
     display: inline-block;
+    vertical-align: center;
 }
 footer .link__logo {
     margin-right: 24px;
