@@ -267,8 +267,7 @@ body {
     position: relative;
     width: 260px;
     height: 380px;
-    margin: 16px auto;
-    position: relative;
+    margin: 18px auto;
     background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%)
 }
 .cruise__caption {
@@ -282,15 +281,18 @@ body {
     left: 0;
     right: 0;
     top: 0;
-    bottom: 0;
-    padding: 26px 30px;
+    min-height: 380px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 30px 25px;
     background: #011C40;
     box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
     color: #F9FBFD;
     opacity: 0;
     transition: 1s;
 }
-.cruise__description:hover {
+.cruise:hover .cruise__description {
     opacity: 1;
 }
 .cruise__description dt, .cruise__description dd {
@@ -299,6 +301,9 @@ body {
 }
 .cruise__description dt {
     margin-top: 15px;
+}
+.cruise__description dd {
+    margin-bottom: -3px;
 }
 .description__btn {
     display: block;
@@ -315,7 +320,7 @@ body {
     color: #011C40;
     padding: 10px 0;
     box-sizing: border-box;
-    margin-top: 20px;
+    margin-top: 29px;
 }
 
 
