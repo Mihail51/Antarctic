@@ -7,11 +7,10 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-	<header class="basic__header">
+	<header class="header header__basic">
 		<nav class="header__nav conteiner">
-			<a href="#" class="link__logo">
+			<a href="#" class="logo header__logo">
 				<img src="images/logo.svg" width="70" height="38" alt="Логотип">
-<!--				<object type="image/svg+xml" data="images/logo.svg"></object>   -->
 			</a>
 			<ul class="menu header__menu">
 				<li><a href="#" class="menu__item_link">Преимущества </a></li>
@@ -22,9 +21,9 @@
 		</nav>
 	</header>
 	<main>
-		<section class="main__screen">
-			<div class="heading main__heading">
-				<h1 class="title main__title conteiner">Круизы в Антарктику <span class="subtitle main__subtitle">Волшебный мир айсбергов и пингвинов</span> </h1>
+		<section class="screen screen__main">
+			<div class="heading screen__heading">
+				<h1 class="title screen__title conteiner">Круизы в Антарктику <span class="subtitle screen__subtitle">Волшебный мир айсбергов и пингвинов</span> </h1>
 			</div>  
 		</section>
 		<section class="travels conteiner">
@@ -34,31 +33,28 @@
 			</div>
 			<img width="560" height="301" src="images/penguins.jpg" alt="Три пингвина на фоне белого снега." class="foto travels__foto">
 		</section>
-		<section class="advantages main__advantages">
+		<section class="advantages advantages__main">
 			<h2 class="heading advantages__heading">Преимущества</h2>
 			<ul class="content advantages__content conteiner">
 				<li class="advantage advantage__description">
 					<img src="images/liner.svg" width="27" height="32" alt="Лайнер">
-<!--					<object type="image/svg+xml" data="images/liner.svg"></object>   -->
 					<h3 class="caption advantage__caption">Небольшой круизный лайнер</h3>
 					<p class="text advantage__text">Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и очередей и даст возможность насладиться видами и природой.</p>
 				</li>
 				<li class="advantage advantage__description">
 					<img src="images/system.svg" width="38" height="21" alt="Две галочки">
-<!--					<object type="image/svg+xml" data="images/system.svg"></object>   -->
 					<h3 class="caption advantage__caption">Система все включено</h3>
 					<p class="text advantage__text">Все наши круизы работают
 					по системе “Все Включено”. Великолепные блюда и безлимитный бар доступны для вас 24 часа.</p>
 				</li>
 				<li class="advantage advantage__description">
 					<img src="images/tours.svg" width="42" height="15" alt="Лодка">
-<!--					<object type="image/svg+xml" data="images/tours.svg"></object>   -->
 					<h3 class="caption advantage__caption">Экскурсионные туры на Zodiac</h3>
 					<p class="text advantage__text">Экскурсионные туры к берегам Антарктиды совершаются на оборудованных лодках типа Zodiac в сопровождении опытных экскурсоводов.</p>
 				</li>
 			</ul>
 		</section>
-		<section class="cruises.main__cruises">
+		<section class="cruises cruises__main">
 			<h2 class="heading cruises__heading">Ближайшие круизы</h2>
 			<div class="content cruises__content conteiner">
 				<figure class="cruise">
@@ -207,7 +203,7 @@
 				</figure>
 			</div>
 		</section>
-		<section class="booking main__booking">
+		<section class="booking booking__main">
 			<div class="content booking__content conteiner">
 				<div class="description booking__description">
 					<h2 class="title booking__title">Раннее бронирование</h2>
@@ -215,19 +211,19 @@
 						до&nbsp;даты&nbsp;выезда&nbsp;и&nbsp;сэкономьте&nbsp;до 50%
 					</p>
 				</div>
-				<form action="#" method="post">
+				<form action="#" method="post" class="form booking__form">
 					<fieldset>
 						<legend class="caption form__caption">Оставьте заявку и мы свяжемся с вами в ближайшее время</legend>
 						<input type="text" class="text" name="username" placeholder="Валерия" required>
 						<input type="tel" class="text" name="phone-number" placeholder="89236889975" required>
 						<input type="email" class="text" name="email-address" placeholder="grishaewa.lera@gmail.com" required>
-						<label class="text form__text"><input type="checkbox" name="consent" required><span></span>&nbsp;&nbsp; Я согласен на обработку моих персональных данных</label>
-						<input type="submit" class="title submit__title" name="submit" value="Оставить заявку" required>
+						<label class="text form__text"><input type="checkbox" name="consent" required><span></span>&nbsp; Я согласен на обработку моих персональных данных</label>
+						<input type="submit" class="title title__submit" name="submit" value="Оставить заявку">
 					</fieldset>
 				</form>
 			</div>
 		</section>
-		<section class="contacts main__contacts conteiner">
+		<section class="contacts contacts__main conteiner">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002867!2d30.320858715764913!3d59.93871916905457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sil!4v1596914732871!5m2!1sru!2sil" width="560" height="306" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
 			<div class="content contacts__content">
 				<h3 class="visually-hidden">Контакты</h3>
@@ -239,10 +235,10 @@
 			</div>
 		</section>
 	</main>
-	<footer class="basic__footer footer__content conteiner">
+	<footer class="footer footer__basic conteiner">
 		<div class="content footer__content conteiner">
 			<nav class="footer__nav">
-				<a href="#" class="link__logo">
+				<a href="#" class="logo footer__logo">
 					<img src="images/logo.svg" width="70" height="38" alt="Логотип">
 <!--					<object type="image/svg+xml" data="images/logo.svg"></object>   -->
 				</a>
