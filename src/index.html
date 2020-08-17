@@ -5,6 +5,10 @@
 	<title>Круизы в Антарктику</title>
 	<link rel="stylesheet" href="css/normalize.css">  
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="preload" href="fonts/montserrat-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="fonts/montserrat-medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="fonts/montserrat-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="fonts/montserrat-semiBold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 </head>
 <body>
 	<header class="header header__basic">
@@ -206,15 +210,18 @@
 				<div class="description booking__description">
 					<h2 class="title booking__title">Раннее бронирование</h2>
 					<p class="text booking__text">Забронируйте тур за 3-6 месяцев
-						до&nbsp;даты&nbsp;выезда&nbsp;и&nbsp;сэкономьте&nbsp;до 50%
+						до&nbsp;даты выезда и сэкономьте до 50%
 					</p>
 				</div>
 				<form action="#" method="post" class="form booking__form">
 					<fieldset class="form__inner">
 						<legend class="caption form__caption">Оставьте заявку и мы свяжемся с вами в ближайшее время</legend>
-						<input type="text" class="text text__form" name="username" placeholder="Валерия" required>
-						<input type="tel" class="text text__tel" name="phone-number" placeholder="89236889975" required>
-						<input type="email" class="text text__email" name="email-address" placeholder="grishaewa.lera@gmail.com" required>
+						<label class="visually-hidden" for="username">username</label>
+						<input id="username" type="text" class="text text__form" name="username" placeholder="Валерия" required>
+						<label class="visually-hidden" for="phone">phone-number</label>
+						<input id="phone" type="tel" class="text text__tel" name="phone-number" placeholder="89236889975" required>
+						<label class="visually-hidden" for="email">email-address</label>
+						<input id="email" type="email" class="text text__email" name="email-address" placeholder="grishaewa.lera@gmail.com" required>
 						<label class="text form__text"><input type="checkbox" name="consent" required><span></span>&nbsp; Я согласен на обработку моих персональных данных</label>
 						<input type="submit" class="title title__submit" name="submit" value="Оставить заявку">
 					</fieldset>
@@ -247,18 +254,9 @@
 				</ul>
 			</nav>
 			<ul class="social footer__social">
-				<li><a href="#" class="social__fb">
-<!--						<img src="images/fb.svg" width="11" height="20" alt="Фэйсбук">  -->
-					</a>
-				</li>
-				<li><a href="#" class="social__instagram">
-<!--						<img src="images/instagram.svg" width="20" height="20" alt="Инстаграм">  -->
-					</a>
-				</li>
-				<li><a href="#" class="social__tweeter">
-<!--						<img src="images/tweeter.svg" width="20" height="16" alt="Твитер">  -->
-					</a>
-				</li>
+				<li><a href="#" class="social__fb"></a></li>
+				<li><a href="#" class="social__instagram"></a></li>
+				<li><a href="#" class="social__tweeter"></a></li>
 			</ul>
 		</div>
 	</footer>
