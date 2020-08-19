@@ -58,13 +58,11 @@ body {
     font-family: 'montserrat', sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-display: swap;
 }
 .heading {
     font-family: 'montserrat', sans-serif;
     font-weight: 600;
     font-style: normal;
-    font-display: swap;
     color: #011C40;
     letter-spacing: 2.6px;
 }
@@ -74,13 +72,11 @@ body {
     line-height: 27px;
     font-weight: 500;
     font-style: normal;
-    font-display: swap;
 }
 .text {
     font-family: 'montserrat', sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-display: swap;
 }
 .menu, .social, .contact {
     list-style: none;
@@ -96,7 +92,6 @@ body {
     position: absolute;
     width: 100%;
     top: 32px;
-    left: 9px
 }
 .header__nav {
     display: -webkit-flex;
@@ -129,7 +124,6 @@ body {
     line-height: 20px;
     font-weight: 500;
     font-style: normal;
-    font-display: swap;
     text-decoration: none;
     color: #F9FBFD;  
 }
@@ -162,7 +156,6 @@ body {
     line-height: 24px;
     font-weight: 400;
     font-style: normal;
-    font-display: swap;
     color: #F9FBFD;
     margin: 12px 0;
 }

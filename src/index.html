@@ -219,11 +219,11 @@
 						<label class="visually-hidden" for="username">username</label>
 						<input id="username" type="text" class="text text__form" name="username" placeholder="Валерия" required>
 						<label class="visually-hidden" for="phone">phone-number</label>
-						<input id="phone" type="tel" class="text text__tel" name="phone-number" placeholder="89236889975" required>
+						<input id="phone" type="tel" class="text text__tel" name="phone-number" placeholder="89236889975" pattern="[0-9]{11}" required>
 						<label class="visually-hidden" for="email">email-address</label>
-						<input id="email" type="email" class="text text__email" name="email-address" placeholder="grishaewa.lera@gmail.com" required>
+						<input id="email" type="email" class="text text__email" name="email-address" placeholder="grishaewa.lera@gmail.com" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" required>
 						<label class="text form__text"><input type="checkbox" name="consent" required><span></span>&nbsp; Я согласен на обработку моих персональных данных</label>
-						<input type="submit" class="title title__submit" name="submit" value="Оставить заявку">
+						<input type="submit" class="title title__submit" name="submit" value="Оставить заявку" required>
 					</fieldset>
 				</form>
 			</div>
