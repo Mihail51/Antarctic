@@ -131,7 +131,7 @@ body {
     margin-left: 0;
 }
 .header__menu li:last-child {
-    margin-right: 0px;
+    margin-right: -8px;
 }
 .menu__item_link {
     font-family: "montserrat", "Arial", sans-serif;
@@ -142,7 +142,7 @@ body {
     text-decoration: none;
     color: #F9FBFD;  
 }
-.menu__item_link:hover, .menu__item_link:focus {
+.menu__item_link:hover, .menu__item_link:focus, .menu__item_link:active {
     text-decoration: underline;
 }
 
@@ -375,7 +375,7 @@ body {
     height: 455px;
     background: #011C40;
     box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
-    padding: 45px 50px;
+    padding: 45px 48px;
     box-sizing: border-box;
 }
 .form__inner {
@@ -399,33 +399,20 @@ body {
 }
 .form__text:hover, .form__text input:hover {
     cursor: pointer;
-}
-.form__text:focus, .form__text input:focus {
+}  
+.form__text input:focus+span, 
+.booking__form input:focus {
     opacity: .7;
-}
-.form__text input+span:focus {
-    opacity: .7;
-}
-.form__text input {
-     transform: scale(1.65);
-    margin-top: 8px;
-    margin-bottom: 25px;
-    background: #F9FBFD;   
-} 
+}  
 .form__text input+span {
-    visibility: hidden;
     display: inline-block;
     vertical-align: middle;
     width: 18px;
     height: 18px;
     background: #F9FBFD;
-    margin: -12px 0 -3px -15px;
-}
-.form__text input:checked {
-    visibility: hidden;
+    margin-left: -18px;
 }  
 .form__text input:checked+span {
-    visibility: visible;
     background: url(../images/angle.svg) no-repeat center center #F9FBFD;
 }
 .form__caption {
@@ -436,9 +423,14 @@ body {
     color: #F9FBFD;
 }
 .form__text {
+    display: block;
+    position: relative;
     font-size: 10px;
     line-height: 13px;
     color: #F9FBFD;
+    padding-left: 19px;
+    margin-top: 12px;
+    margin-bottom: 20px
 }
 .title__submit {
     font-size: 14px;
@@ -482,7 +474,8 @@ body {
     color: #011C40;
 }
 .phone-number a:hover, 
-.phone-number a:focus {
+.phone-number a:focus, 
+.phone-number a:active {
     text-decoration: underline;
 }
 .contact li::before {
@@ -553,7 +546,8 @@ body {
     cursor: pointer;
     opacity: .7;
 }
-.footer__social li a:focus {
+.footer__social li a:focus, 
+.footer__social li a:active {
     opacity: .7;
 }
 .footer__social li a {
