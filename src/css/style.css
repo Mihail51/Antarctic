@@ -400,7 +400,7 @@ body {
 .form__text:hover, .form__text input:hover {
     cursor: pointer;
 }
-.form__text:active, .form__text input:active {
+.form__text:focus, .form__text input:focus {
     opacity: .7;
 }
 .form__text input+span:focus {
