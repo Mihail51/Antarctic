@@ -310,7 +310,7 @@ body {
 .cruise:hover .cruise__description {
     opacity: 1;
 }
-.cruise:focus .cruise__description {
+.cruise__description:focus-within {
     opacity: 1;
 }
 .cruise__description dt, .cruise__description dd {
