@@ -467,8 +467,13 @@ body {
     align-items: center;
     padding: 120px 0;
 }
+iframe {
+    max-width: 560px;
+    flex-basis: 48.28%;
+}
 .contacts__content {
-    width: 500px;
+    max-width: 500px;
+    flex-basis: 44%;
 }
 .contacts__caption {
     font-size: 18px;
@@ -591,3 +596,9 @@ body {
     background: url(../images/tweeter.svg) no-repeat center center;
 }
 
+@media (max-width: 1170px) {
+    .address span {
+        display: block;
+        margin-left: 30px;
+    }
+}
