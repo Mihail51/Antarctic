@@ -241,7 +241,8 @@ body {
     list-style: none;
 }
 .advantage__description {
-    width: 360px;
+    flex-basis: 31.04%;
+    max-width: 360px;
     position: relative;
     padding: 27px 30px;
     margin-bottom: 20px;
