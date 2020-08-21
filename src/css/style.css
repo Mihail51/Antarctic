@@ -365,7 +365,8 @@ body {
     padding: 50px;
 }
 .booking__description {
-    width: 515px;
+    max-width: 515px;
+    flex-basis: 44.4%;
     margin-top: -17px;
 }
 .booking__title {
@@ -383,6 +384,7 @@ body {
 .form {
     width: 403px;
     height: 455px;
+    flex-shrink: 0;
     background: #011C40;
     box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
     padding: 42px 50px;
