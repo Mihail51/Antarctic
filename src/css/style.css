@@ -191,8 +191,13 @@ body {
     align-items: center;
     margin: 120px auto;
 }
+.travels__foto {
+    max-width: 560px;
+    flex-basis: 48.28%;
+}
 .travels__description {
-    width: 512px;
+   max-width: 512px;
+   flex-basis: 44.14%;
 }
 .travels__heading {
     text-align: left;
