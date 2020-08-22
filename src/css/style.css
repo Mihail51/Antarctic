@@ -68,6 +68,7 @@ body {
     font-family: "montserrat", "Arial", sans-serif;
     font-weight: 600;
     font-size: 28px;
+    line-height: 42px;
     font-style: normal;
     color: #011C40;
 }
@@ -194,6 +195,10 @@ body {
 .travels__foto {
     max-width: 560px;
     flex-basis: 48.28%;
+     height: 301px;
+   background: url(../images/penguins.jpg) no-repeat center center #E3ECF6;
+   -webkit-background-size: cover;
+   background-size: cover;
 }
 .travels__description {
    max-width: 512px;
@@ -608,7 +613,17 @@ iframe {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
+    .heading {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    .caption {
+        line-height: 25px;
+    }
+    .header__basic {
+        top: 27px;
+    }
     .logo {
         width: initial;
         height: initial;
@@ -640,16 +655,48 @@ iframe {
         background-size: cover;
         height: 630px;
     }
+    .screen__title {
+        font-size: 50px;
+        line-height: 61px;
+        padding-left: 0;
+    }
+    .subtitl {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .travels__foto {
+        height: 264px;
+        background: url(../images/penguins-tablet.jpg) no-repeat center center #E3ECF6;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    .travels__description {
+        flex-basis: 47.79%;
+    }
+    .cruise {
+        width: 309px;
+        height: 386px;
+    }
+    .cruise img {
+        width: 100%;
+    }
     .booking__description {
         flex-basis: 100%;
         margin-top: 42px;
         margin-bottom: 60px;
         text-align: center;
     }
+    .booking__title {
+        font-size: 34px;
+        line-height: 51px;
+    }
     .booking__text {
         width: 352px;
         margin: 0 auto;
         padding-right: initial;
+    }
+    .contacts__content {
+        flex-basis: 47.79%;
     }
     .footer__social li a::before {
         width: 16px;
