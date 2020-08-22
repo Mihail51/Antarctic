@@ -51,8 +51,10 @@ body {
     margin: -1px;
 }
 .conteiner {
+    position: relative;
     width: 88.3%;
-   max-width: 1160px;
+    max-width: 1160px;
+    min-width: 290px;
     margin: 0 auto;
 }
 .logo {
@@ -190,18 +192,25 @@ body {
     justify-content: space-between;
     -ms-align-items: center;
     align-items: center;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
     margin: 120px auto;
 }
 .travels__foto {
     max-width: 560px;
+    min-width: 290px;
     flex-basis: 48.28%;
-     height: 301px;
-   background: url(../images/penguins.jpg) no-repeat center center #E3ECF6;
-   -webkit-background-size: cover;
-   background-size: cover;
+    height: 301px;
+    background: url(../images/penguins.jpg) no-repeat center center #E3ECF6;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 .travels__description {
    max-width: 512px;
+   min-width: 290px;
    flex-basis: 44.14%;
 }
 .travels__heading {
@@ -475,6 +484,11 @@ body {
     justify-content: space-between;
     -ms-align-items: center;
     align-items: center;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
     padding: 120px 0;
 }
 iframe {
@@ -529,7 +543,7 @@ iframe {
 /* FOOTER */
 .footer__basic {
     width: 100%;
-    height: 138px;
+    min-height: 138px;
     background: #011C40;
     border: .1px solid #011C40;
     -webkit-box-sizing: border-box;
@@ -664,6 +678,9 @@ iframe {
         font-size: 18px;
         line-height: 22px;
     }
+    .travels {
+        margin: 100px auto;
+    }
     .travels__foto {
         height: 264px;
         background: url(../images/penguins-tablet.jpg) no-repeat center center #E3ECF6;
@@ -672,6 +689,15 @@ iframe {
     }
     .travels__description {
         flex-basis: 47.79%;
+    }
+    .advantages__heading {
+        margin: 100px auto 0;
+    }
+    .advantages__heading {
+        margin: 100px auto 0;
+    }
+    .cruises__content {
+        margin: 30px auto 88px;
     }
     .cruise {
         width: 309px;
@@ -695,13 +721,132 @@ iframe {
         margin: 0 auto;
         padding-right: initial;
     }
+    .form {
+        margin-bottom: 50px;
+    }
+    .contacts__main {
+        padding: 100px 0;
+    }
     .contacts__content {
         flex-basis: 47.79%;
+    }
+    iframe {
+        flex-basis: 47.79%;
+        height: 335px;
     }
     .footer__social li a::before {
         width: 16px;
         height: 16px;
         -webkit-background-size: contain;
         background-size: contain;
+    }
+}
+
+@media (max-width: 767px) {
+    .header__menu {
+        position: absolute;
+        top: -27px;
+        right: -5.5%;
+        left: -5.5%;
+        height: 299px;
+        background: #F9FBFD;
+        display: none;
+    }
+    .header__menu li a {
+        color: #011C40;
+    }
+    .header__menu li {
+        margin-left: 5.5%!important;
+    }
+    .header__menu li:first-child {
+        margin-top: 80px;
+    }
+    .screen__main {
+        height: 500px;
+        background-position-y: top;
+        background-size: auto;
+    }
+    .screen__title {
+        font-size: 36px;
+        line-height: 45px;
+        padding-top: 185px;
+    }
+    .subtitle {
+        font-size: 16px;
+        line-height: 22px;
+        padding-right: 90px;
+    }
+    .travels {
+        justify-content: space-around;
+    }
+    .travels__foto {
+        height: 186px;
+        margin-top: 40px;
+    }
+    .advantages__content {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+        -ms-align-items: center;
+        align-items: center;
+    }
+    .advantage__description {
+        flex-basis: 100%;
+        max-width: 360px;
+    }
+    .cruise {
+        width: 270px;
+        margin: 15px 10px;
+    }
+    .booking__content {
+        padding: 0;
+    }
+    .booking__text {
+        width: 100%;
+        max-width: 352px;
+    }
+    .contacts__main {
+        justify-content: space-around;
+        padding: 65px 0;
+    }
+    iframe {
+        flex-basis: 100%;
+        max-width: 560px;
+        height: 316px;
+        margin-top: 43px;
+    }
+    .contacts__content {
+        flex-basis: 100%;
+        max-width: 500px;
+        order: -1;
+    }
+    .form {
+        max-width: 403px;
+        min-height: 455px;
+        flex-basis: 100%;
+    }
+    .footer__logo {
+        margin-bottom: 18.5px;
+    }
+    .footer__content, .footer__nav {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+        -ms-align-items: flex-start;
+        align-items: flex-start;
+    }
+    .footer__content {
+        padding: 40px auto;
+    }
+    .menu li {
+        display: block;
+        margin: 11.5px 0;
+    }
+    .footer__social {
+        margin-top: 18.5px;
     }
 }
