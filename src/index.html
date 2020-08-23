@@ -13,9 +13,16 @@
 <body>
 	<header class="header header__basic">
 		<nav class="header__nav conteiner">
+			<input class="menu-smart-input" type="checkbox" name="menu-smart" id="menu-smart">
 			<a href="#" class="logo header__logo">
-				<img src="images/logo.svg" width="70" height="38" alt="Логотип">
+				<img class="logo__image" src="images/logo.svg" width="70" height="38" alt="Логотип">
 			</a>
+			<a href="#" class="logo header__logo_open">
+				<img class="logo__image_menu" src="images/logo-menu-tablet.svg" width="70" height="38" alt="Логотип">
+			</a>
+			<label class="menu-smart-label-open" for="menu-smart"> <img src="images/menu-smart-open.svg" alt="Бутерброд"> </label>
+			<label class="menu-smart-label-close" for="menu-smart"> <img src="images/menu-smart-close.svg" alt="Крест"> </label>
+			
 			<ul class="menu header__menu">
 				<li><a href="#" class="menu__item_link">Преимущества </a></li>
 				<li><a href="#" class="menu__item_link">Направления</a></li>
@@ -225,7 +232,7 @@
 						<label class="visually-hidden" for="email">email-address</label>
 						<input id="email" type="email" class="text text__email" name="email-address" placeholder="grishaewa.lera@gmail.com" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" required>
 						<label class="text form__text"><input type="checkbox" name="consent" class="visually-hidden" required><span></span>&nbsp; Я согласен на обработку моих персональных данных</label>
-						<input type="submit" class="btn title__submit" name="submit" value="Оставить заявку">
+						<input type="submit" class="btn btn__contact" name="submit" value="Оставить заявку">
 					</fieldset>
 				</form>
 			</div>
