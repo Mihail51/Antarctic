@@ -316,7 +316,7 @@ body {
     position: relative;
     width: 260px;
     height: 380px;
-    margin: 18px auto;
+    margin: 18px 10px;
     background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%)
 }
 .cruise__caption {
@@ -613,7 +613,7 @@ iframe {
     width: 20px;
     height: 20px;
 }
-.footer__social li a::before {
+.footer__social_item a::before {
     content: "";
     display: inline-block;
     vertical-align: middle;
@@ -745,7 +745,7 @@ iframe {
         flex-basis: 47.79%;
         height: 335px;
     }
-    .footer__social li a::before {
+    .footer__social_item a::before {
         width: 16px;
         height: 16px;
         -webkit-background-size: contain;
