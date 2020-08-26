@@ -305,6 +305,7 @@ body {
     display: -o-flex;
     display: flex;
     justify-content: space-around;
+    align-content: stretch;
     -webkit-flex-wrap: wrap;
     -moz-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
@@ -314,10 +315,44 @@ body {
 }
 .cruise {
     position: relative;
-    width: 260px;
-    height: 380px;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex; 
     margin: 18px 10px;
-    background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%)
+}
+.cruise__item_1 {
+    background: url(../images/astoria.svg) no-repeat center center, linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%);
+    background-size: cover;
+}
+.cruise__item_2 {
+    background: url(../images/astoria.svg) no-repeat center center, linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%);
+    background-size: cover;
+}
+.cruise__item_3 {
+    background: url(../images/atlantis.svg) no-repeat center center, linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%);
+    background-size: cover;
+}
+.cruise__item_4 {
+    background: url(../images/odysseus.svg) no-repeat center center, linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%);
+    background-size: cover;
+}
+.cruise__item_5 {
+    background: url(../images/olympia.svg) no-repeat center center, linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%);
+    background-size: cover;
+}
+.cruise__item_6 {
+    background: url(../images/aurora.svg) no-repeat center center, linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%);
+    background-size: cover;
+}
+.cruise__item_7 {
+    background: url(../images/leonor.svg) no-repeat center center, linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%);
+    background-size: cover;
+}
+.cruise__item_8 {
+    background: url(../images/minion.svg) no-repeat center center, linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%);
+    background-size: cover;
 }
 .cruise__caption {
     position: absolute;
@@ -326,12 +361,17 @@ body {
     color: #F9FBFD;
 }
 .cruise__description {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    -webkit-box-sizing: border-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    width: 260px;
+    min-height: 380px;
+     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding: 28px 25px;
@@ -365,7 +405,7 @@ body {
     padding: 7px 0;
     box-sizing: border-box;
     margin-top: 29px;
-    margin-bottom: 25px;
+/*    margin-bottom: 25px;   */
 }
 
 
