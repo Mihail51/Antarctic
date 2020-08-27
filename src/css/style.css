@@ -698,7 +698,7 @@ iframe {
         height: 20px;
     }
     .menu li, .social li {
-        margin: 0 11.5px;
+        margin: 0 9.7px;
     }
     .menu li:first-child, .social li:first-child {
         margin-left: 0;
@@ -718,19 +718,24 @@ iframe {
         background: url(../images/main-foto-tablet.jpg) no-repeat center center #E3ECF6;
         -webkit-background-size: cover;
         background-size: cover;
-        height: 630px;
+        height: 638px;
     }
     .screen__title {
         font-size: 50px;
         line-height: 61px;
         padding-left: 0;
     }
-    .subtitl {
+    .subtitle {
         font-size: 18px;
         line-height: 22px;
+        margin: 10px 0;
     }
     .travels {
-        margin: 100px auto;
+        margin: 90px auto;
+    }
+    .travels__heading {
+        margin-top: 3px;
+        margin-bottom: 14px;
     }
     .travels__foto {
         height: 264px;
@@ -745,27 +750,70 @@ iframe {
         margin: 100px auto 0;
     }
     .advantages__heading {
-        margin: 100px auto 0;
+        margin: 94px auto 0;
+    }
+    .advantages__content {
+        margin: 50px auto 80px;
+    }
+    .advantage__description {
+        flex-basis: 30.5%;
+        padding: 27px 16px 18px;
+    }
+    .advantage__description img {
+        top: 38px;
+        left: 20px;
+    }
+    .image__liner {
+        width: 22px;
+    }
+    .image__system {
+        width: 35px;
+    }
+    .image__tours {
+        width: 39px;
+    }
+    .advantage__caption {
+        margin: 44px 0 10px 4px;
+    }
+    .advantage__text {
+        padding-left: 5px;
+    }
+    .cruises__heading {
+        margin: 91px auto 0;
     }
     .cruises__content {
-        margin: 30px auto 88px;
+        margin: 35px auto 84px;
     }
     .cruise {
-        width: 309px;
-        height: 386px;
+        min-width: 309px;
+        min-height: 386px;
+        margin: 15px 10px;
     }
-    .cruise img {
+    .cruise__caption {
+        left: 35px;
+        bottom: 28px;
+    }
+    .cruise__description {
+        width: 309px;
+        min-height: 386px;
+        padding: 32px 35px;
+    }
+    .description__btn {
         width: 100%;
+    }
+    .booking__content {
+        padding: 40px 0 50px;
     }
     .booking__description {
         flex-basis: 100%;
         margin-top: 42px;
-        margin-bottom: 60px;
+        margin-bottom: 52px;
         text-align: center;
     }
     .booking__title {
         font-size: 34px;
         line-height: 51px;
+        margin: 6px 0;
     }
     .booking__text {
         width: 352px;
@@ -773,7 +821,17 @@ iframe {
         padding-right: initial;
     }
     .form {
+        padding: 44px 50px;
         margin-bottom: 50px;
+    }
+    .form__caption {
+        margin-bottom: 14px;
+    }
+    .text__form, .text__tel, .text__email, .btn__contact {
+        margin: 10.6px auto;
+    }
+    .form__text {
+        margin-top: 8px;
     }
     .contacts__main {
         padding: 100px 0;
@@ -781,9 +839,24 @@ iframe {
     .contacts__content {
         flex-basis: 47.79%;
     }
+    .contact {
+        margin-top: 30px;
+    }
+    .address span {
+        margin-left: 28px;
+    }
     iframe {
         flex-basis: 47.79%;
         height: 335px;
+    }
+    .social li {
+        margin: 0 8px;
+    }
+    .footer__social li:last-child {
+        margin-right: -3px;
+    }
+    .footer__logo, .footer__menu {
+        margin-top: -4px;
     }
     .footer__social_item a::before {
         width: 16px;
@@ -794,6 +867,12 @@ iframe {
 }
 
 @media (max-width: 767px) {
+    .heading {
+        letter-spacing: -1.5px;
+    }
+    .header__basic {
+        top: 21px;
+    }
     .header__menu {
         position: absolute;
         top: -27px;
@@ -838,7 +917,7 @@ iframe {
     .screen__title {
         font-size: 36px;
         line-height: 45px;
-        padding-top: 185px;
+        padding-top: 176px;
     }
     .subtitle {
         font-size: 16px;
@@ -847,6 +926,7 @@ iframe {
     }
     .travels {
         justify-content: space-around;
+        margin: 52px auto;
     }
     .travels__foto {
         height: 186px;
