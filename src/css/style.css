@@ -777,6 +777,7 @@ iframe {
     }
     .advantage__text {
         padding-left: 5px;
+ /*       white-space: pre-wrap;  */
     }
     .cruises__heading {
         margin: 91px auto 0;
@@ -926,11 +927,17 @@ iframe {
     }
     .travels {
         justify-content: space-around;
-        margin: 52px auto;
+        margin: 52px auto 66px;
     }
     .travels__foto {
         height: 186px;
-        margin-top: 40px;
+        margin-top: 33px;
+    }
+    .travels__heading {
+        margin-bottom: 12px;
+    }
+    .advantages__heading {
+        margin: 56px auto 0;
     }
     .advantages__content {
         -webkit-flex-direction: column;
@@ -940,41 +947,93 @@ iframe {
         flex-direction: column;
         -ms-align-items: center;
         align-items: center;
+        margin: 30px auto 34px;
     }
     .advantage__description {
         flex-basis: 100%;
         max-width: 360px;
+        min-height: 250px;
+        margin-bottom: 30px;
+    }
+    .advantage__caption {
+        margin: 44px 38px 10px 4px;
+    }
+    .cruises__heading {
+        margin: 56px auto 0;
+    }
+    .cruises__content {
+        margin: 15px auto 50px;
     }
     .cruise {
-        width: 270px;
+        min-width: 270px;
         margin: 15px 10px;
+    }
+    .cruise__caption {
+        left: 25px;
+        bottom: 20px;
+    }
+    .cruise__description {
+        width: 270px;
+        padding: 32px 25px;
     }
     .booking__content {
         padding: 0;
     }
+    .booking__description {
+        margin-bottom: 36px;
+    }
+    .booking__title {
+        font-size: 24px;
+        line-height: 31px;
+        margin: 15px 0;
+    }
     .booking__text {
         width: 100%;
-        max-width: 352px;
+        max-width: 257px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .form {
+        max-width: 290px;
+        min-height: 460px;
+        flex-basis: 100%;
+        padding: 34px 30px;
+        margin-bottom: 64px;
+    }
+    .form__caption {
+        text-align: center;
+    }
+    .text__form, .text__tel, .text__email, .btn__contact {
+        margin: 9.6px auto;
+    }
+    .form__text {
+        margin-top: 12px;
+        padding-left: 24px;
+        line-height: 10px;
+    }
+    .form__text input + span {
+        position: absolute;
+        width: 20px;
+        margin-left: -22px;
     }
     .contacts__main {
         justify-content: space-around;
-        padding: 65px 0;
+        padding: 60px 0;
     }
     iframe {
         flex-basis: 100%;
-        max-width: 560px;
+        max-width: 300px;
         height: 316px;
         margin-top: 43px;
     }
     .contacts__content {
         flex-basis: 100%;
         max-width: 500px;
+        margin-top: -4px;
         order: -1;
     }
-    .form {
-        max-width: 403px;
-        min-height: 455px;
-        flex-basis: 100%;
+    .contacts__caption {
+        line-height: 27px;
     }
     .footer__logo {
         margin-bottom: 18.5px;
@@ -989,13 +1048,23 @@ iframe {
         align-items: flex-start;
     }
     .footer__content {
-        padding: 40px auto;
+        margin: 42px auto;
+    }
+    .logo img {
+        width: 42px;
+        height: 22px;
+    }
+    .footer__menu {
+        margin-top: -10px;
     }
     .menu li {
         display: block;
-        margin: 11.5px 0;
+        margin: 13.5px 0;
     }
     .footer__social {
-        margin-top: 18.5px;
+        margin-top: 11.5px;
+    }
+    .social li:first-child {
+        margin-left: -3.5px;
     }
 }
