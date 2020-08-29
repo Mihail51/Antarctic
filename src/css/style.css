@@ -132,13 +132,7 @@ body {
     flex-wrap: wrap;
     -ms-align-items: center;
     align-items: center;
-}  /*
-.header__logo {
-    margin-left: 8px;
 }  
-.header__menu li:last-child {
-    margin-right: -8px;
-}  */
 .menu-smart-input {
     display: none;
 }
@@ -149,6 +143,9 @@ body {
 }
 .header__logo_open {
     display: none;
+}
+.header__menu li:last-child {
+    margin-right: 0;
 }
 .menu__item_link {
     font-family: "montserrat", "Arial", sans-serif;
@@ -226,7 +223,8 @@ body {
 }
 .travels__heading {
     text-align: left;
-    margin-bottom: 30px;
+    margin-top: -3px;
+    margin-bottom: 22px;
 }
 .travels__text {
     text-align: left;
@@ -247,7 +245,7 @@ body {
 }
 .advantages__heading {
     text-align: center;
-    margin: 112px auto 0;
+    margin: 110px auto 0;
 }
 .advantages__content {
     display: -webkit-flex;
@@ -262,7 +260,7 @@ body {
     -ms-flex-wrap: wrap;
     -o-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin: 53px auto 100px;
+    margin: 47px auto 100px;
     list-style: none;
 }
 .advantage__description {
@@ -296,7 +294,7 @@ body {
 
 .cruises__heading {
     text-align: center;
-    margin: 110px auto 0;
+    margin: 106px auto 0;
 }
 .cruises__content {
     display: -webkit-flex;
@@ -311,7 +309,7 @@ body {
     -ms-flex-wrap: wrap;
     -o-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin: 38px auto 108px;
+    margin: 32px auto 104px;
 }
 .cruise {
     position: relative;
@@ -320,7 +318,7 @@ body {
     display: -ms-flex;
     display: -o-flex;
     display: flex; 
-    margin: 18px 10px;
+    margin: 16px 10px;
 }
 .cruise__item_1 {
     background: url(../images/astoria.svg) no-repeat center center, linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%);
@@ -357,7 +355,7 @@ body {
 .cruise__caption {
     position: absolute;
     left: 30px;
-    bottom: 16px;
+    bottom: 20px;
     color: #F9FBFD;
 }
 .cruise__description {
@@ -374,7 +372,7 @@ body {
      -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 28px 25px;
+    padding: 28px 25px 35px;
     background: #011C40;
     box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
     color: #F9FBFD;
@@ -402,7 +400,7 @@ body {
     display: block;
     width: 210px;
     height: 40px;
-    padding: 7px 0;
+    padding: 11px 0;
     box-sizing: border-box;
     margin-top: 29px;
 /*    margin-bottom: 25px;   */
@@ -757,6 +755,7 @@ iframe {
     }
     .advantage__description {
         flex-basis: 30.5%;
+        min-width: 206px;
         padding: 27px 16px 18px;
     }
     .advantage__description img {
@@ -778,6 +777,9 @@ iframe {
     .advantage__text {
         padding-left: 5px;
  /*       white-space: pre-wrap;  */
+    }
+    .advantage__text span {
+        display: block;
     }
     .cruises__heading {
         margin: 91px auto 0;
@@ -801,6 +803,7 @@ iframe {
     }
     .description__btn {
         width: 100%;
+        padding: 8px 0;
     }
     .booking__content {
         padding: 40px 0 50px;
@@ -876,7 +879,7 @@ iframe {
     }
     .header__menu {
         position: absolute;
-        top: -27px;
+        top: -21px;
         right: -5.5%;
         left: -5.5%;
         height: 299px;
@@ -884,14 +887,18 @@ iframe {
         z-index: 5;
         display: none;
     }
-    .header__menu li a {
+    .header__menu .menu__item_link {
+        font-size: 18px;
+        line-height: 22px;
         color: #011C40;
     }
     .header__menu li {
-        margin-left: 5.5%!important;
+        padding-left: 5.5%;
+        margin: 21.5px 0;
+        display: block;
     }
     .header__menu li:first-child {
-        margin-top: 80px;
+        margin-top: 88px;
     }
     .menu-smart-label-open {
         display: initial;
@@ -957,6 +964,9 @@ iframe {
     }
     .advantage__caption {
         margin: 44px 38px 10px 4px;
+    }
+    .advantage__text span {
+        display: initial;
     }
     .cruises__heading {
         margin: 56px auto 0;
@@ -1057,7 +1067,7 @@ iframe {
     .footer__menu {
         margin-top: -10px;
     }
-    .menu li {
+    .footer__menu li {
         display: block;
         margin: 13.5px 0;
     }
