@@ -132,6 +132,7 @@ body {
     flex-wrap: wrap;
     -ms-align-items: center;
     align-items: center;
+    z-index: 1;
 }  
 .menu-smart-input {
     display: none;
@@ -469,6 +470,8 @@ body {
     height: 43px;
     margin: 10px auto;
     background: #F9FBFD;
+    -webkit-appearance: none;
+    border-radius: 0;
 }
 .text__form, .text__tel, .text__email {
     padding-left: 16px;
