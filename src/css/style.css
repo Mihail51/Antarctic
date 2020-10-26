@@ -39,7 +39,7 @@
     padding: 0;
 }
 body {
-    min-width: 1366px;
+/*    min-width: 1366px;  */
     margin: 0 auto;
     background: #F9FBFD;
 }
@@ -51,7 +51,10 @@ body {
     margin: -1px;
 }
 .conteiner {
-    width: 1160px;
+    position: relative;
+    width: 88.3%;
+    max-width: 1160px;
+    min-width: 290px;
     margin: 0 auto;
 }
 .logo {
@@ -67,6 +70,7 @@ body {
     font-family: "montserrat", "Arial", sans-serif;
     font-weight: 600;
     font-size: 28px;
+    line-height: 42px;
     font-style: normal;
     color: #011C40;
 }
@@ -111,6 +115,8 @@ body {
     position: absolute;
     width: 100%;
     top: 35px;
+    right: 0;
+    left: 0;
 }
 .header__nav {
     display: -webkit-flex;
@@ -126,12 +132,21 @@ body {
     flex-wrap: wrap;
     -ms-align-items: center;
     align-items: center;
+    z-index: 1;
+}  
+.menu-smart-input {
+    display: none;
 }
-.header__logo {
-    margin-left: 8px;
+.menu-smart-label-open, .menu-smart-label-close {
+    display: none;
+    z-index: 10;
+    cursor: pointer;
+}
+.header__logo_open {
+    display: none;
 }
 .header__menu li:last-child {
-    margin-right: -8px;
+    margin-right: 0;
 }
 .menu__item_link {
     font-family: "montserrat", "Arial", sans-serif;
@@ -150,6 +165,7 @@ body {
 .screen__main {
     width: 100%;
     height: 650px;
+    margin: 0 auto;
     background: url(../images/main-foto.jpg) no-repeat center center #E3ECF6;
     -webkit-background-size: cover;
     background-size: cover;
@@ -185,14 +201,31 @@ body {
     justify-content: space-between;
     -ms-align-items: center;
     align-items: center;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
     margin: 120px auto;
 }
+.travels__foto {
+    max-width: 560px;
+    min-width: 290px;
+    flex-basis: 48.28%;
+    height: 301px;
+    background: url(../images/penguins.jpg) no-repeat center center #E3ECF6;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
 .travels__description {
-    width: 512px;
+   max-width: 512px;
+   min-width: 290px;
+   flex-basis: 44.14%;
 }
 .travels__heading {
     text-align: left;
-    margin-bottom: 30px;
+    margin-top: -3px;
+    margin-bottom: 22px;
 }
 .travels__text {
     text-align: left;
@@ -213,7 +246,7 @@ body {
 }
 .advantages__heading {
     text-align: center;
-    margin: 112px auto 0;
+    margin: 110px auto 0;
 }
 .advantages__content {
     display: -webkit-flex;
@@ -228,11 +261,12 @@ body {
     -ms-flex-wrap: wrap;
     -o-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin: 53px auto 100px;
+    margin: 47px auto 100px;
     list-style: none;
 }
 .advantage__description {
-    width: 360px;
+    flex-basis: 31.04%;
+    max-width: 360px;
     position: relative;
     padding: 27px 30px;
     margin-bottom: 20px;
@@ -261,7 +295,7 @@ body {
 
 .cruises__heading {
     text-align: center;
-    margin: 110px auto 0;
+    margin: 106px auto 0;
 }
 .cruises__content {
     display: -webkit-flex;
@@ -269,37 +303,77 @@ body {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
+    align-content: stretch;
     -webkit-flex-wrap: wrap;
     -moz-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     -o-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin: 38px auto 108px;
+    margin: 32px auto 104px;
 }
 .cruise {
     position: relative;
-    width: 260px;
-    height: 380px;
-    margin: 18px auto;
-    background: linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%)
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex; 
+    margin: 16px calc((100% - 1040px)/8);
+}
+.cruise__item_1 {
+    background: url(../images/astoria.svg) no-repeat center center, linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%);
+    background-size: cover;
+}
+.cruise__item_2 {
+    background: url(../images/astoria.svg) no-repeat center center, linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%);
+    background-size: cover;
+}
+.cruise__item_3 {
+    background: url(../images/atlantis.svg) no-repeat center center, linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%);
+    background-size: cover;
+}
+.cruise__item_4 {
+    background: url(../images/odysseus.svg) no-repeat center center, linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%);
+    background-size: cover;
+}
+.cruise__item_5 {
+    background: url(../images/olympia.svg) no-repeat center center, linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%);
+    background-size: cover;
+}
+.cruise__item_6 {
+    background: url(../images/aurora.svg) no-repeat center center, linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%);
+    background-size: cover;
+}
+.cruise__item_7 {
+    background: url(../images/leonor.svg) no-repeat center center, linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%);
+    background-size: cover;
+}
+.cruise__item_8 {
+    background: url(../images/minion.svg) no-repeat center center, linear-gradient(180deg, rgba(1, 28, 64, 0) 50%, #011C40 100%);
+    background-size: cover;
 }
 .cruise__caption {
     position: absolute;
     left: 30px;
-    bottom: 16px;
+    bottom: 20px;
     color: #F9FBFD;
 }
 .cruise__description {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    -webkit-box-sizing: border-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    width: 260px;
+    min-height: 380px;
+     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 28px 25px;
+    padding: 28px 25px 35px;
     background: #011C40;
     box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
     color: #F9FBFD;
@@ -327,10 +401,10 @@ body {
     display: block;
     width: 210px;
     height: 40px;
-    padding: 7px 0;
+    padding: 11px 0;
     box-sizing: border-box;
     margin-top: 29px;
-    margin-bottom: 25px;
+/*    margin-bottom: 25px;   */
 }
 
 
@@ -338,7 +412,7 @@ body {
 
 .booking__main {
     width: 100%;
-    height: 555px;
+    min-height: 555px;
     background: url(../images/booking-photo.jpg) no-repeat center center #E3ECF6;
     -webkit-background-size: cover;
     background-size: cover;
@@ -352,10 +426,16 @@ body {
     justify-content: space-around;
     -ms-align-items: center;
     align-items: center;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
     padding: 50px;
 }
 .booking__description {
-    width: 515px;
+    max-width: 515px;
+    flex-basis: 44.4%;
     margin-top: -17px;
 }
 .booking__title {
@@ -373,6 +453,7 @@ body {
 .form {
     width: 403px;
     height: 455px;
+    flex-shrink: 0;
     background: #011C40;
     box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
     padding: 42px 50px;
@@ -384,11 +465,13 @@ body {
     border: none;
     margin-left: -13px;
 }
-.text__form, .text__tel, .text__email, .title__submit {
+.text__form, .text__tel, .text__email, .btn__contact {
     width: 100%;
     height: 43px;
     margin: 10px auto;
     background: #F9FBFD;
+    -webkit-appearance: none;
+    border-radius: 0;
 }
 .text__form, .text__tel, .text__email {
     padding-left: 16px;
@@ -435,7 +518,7 @@ body {
     margin-top: 10px;
     margin-bottom: 20px
 }
-.title__submit {
+.btn__contact {
     font-size: 14px;
     line-height: 21px;
     color: #011C40;
@@ -453,10 +536,20 @@ body {
     justify-content: space-between;
     -ms-align-items: center;
     align-items: center;
+    -webkit-flex-wrap: wrap;
+    -moz-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -o-flex-wrap: wrap;
+    flex-wrap: wrap;
     padding: 120px 0;
 }
+iframe {
+    max-width: 560px;
+    flex-basis: 48.28%;
+}
 .contacts__content {
-    width: 500px;
+    max-width: 500px;
+    flex-basis: 44%;
 }
 .contacts__caption {
     font-size: 18px;
@@ -502,7 +595,7 @@ body {
 /* FOOTER */
 .footer__basic {
     width: 100%;
-    height: 138px;
+    min-height: 138px;
     background: #011C40;
     border: .1px solid #011C40;
     -webkit-box-sizing: border-box;
@@ -518,7 +611,7 @@ body {
     justify-content: space-between;
     margin: 50px auto;
 }
-.logo, .footer__menu {
+.footer__logo, .footer__menu {
     display: inline-block;
     vertical-align: middle;
 }
@@ -561,7 +654,7 @@ body {
     width: 20px;
     height: 20px;
 }
-.footer__social li a::before {
+.footer__social_item a::before {
     content: "";
     display: inline-block;
     vertical-align: middle;
@@ -579,3 +672,415 @@ body {
     background: url(../images/tweeter.svg) no-repeat center center;
 }
 
+@media (max-width: 1185px) {
+    .address span {
+        display: block;
+        margin-left: 30px;
+    }
+    .cruise {
+        margin: 16px calc((100% - 780px)/6);
+    }
+}
+
+@media (max-width: 1023px) {
+    .heading {
+        font-size: 26px;
+        line-height: 36px;
+    }
+    .caption {
+        line-height: 25px;
+    }
+    .header__basic {
+        top: 27px;
+    }
+    .logo {
+        width: initial;
+        height: initial;
+    }
+    .logo img {
+        width: 38px;
+        height: 20px;
+    }
+    .menu li, .social li {
+        margin: 0 9.7px;
+    }
+    .menu li:first-child, .social li:first-child {
+        margin-left: 0;
+    }
+    .menu li:last-child {
+        margin-right: 0;
+    }
+    .header__menu .menu__item_link {
+        font-size: 14px;
+        line-height: 17px;
+    }
+    .footer__menu .menu__item_link {
+        font-size: 12px;
+        line-height: 15px;
+    }
+    .screen__main {
+        background: url(../images/main-foto-tablet.jpg) no-repeat center center #E3ECF6;
+        -webkit-background-size: cover;
+        background-size: cover;
+        height: 638px;
+    }
+    .screen__title {
+        font-size: 50px;
+        line-height: 61px;
+        padding-left: 0;
+    }
+    .subtitle {
+        font-size: 18px;
+        line-height: 22px;
+        margin: 10px 0;
+    }
+    .travels {
+        margin: 90px auto;
+    }
+    .travels__heading {
+        margin-top: 3px;
+        margin-bottom: 14px;
+    }
+    .travels__foto {
+        height: 264px;
+        background: url(../images/penguins-tablet.jpg) no-repeat center center #E3ECF6;
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    .travels__description {
+        flex-basis: 47.79%;
+    }
+    .advantages__heading {
+        margin: 100px auto 0;
+    }
+    .advantages__heading {
+        margin: 94px auto 0;
+    }
+    .advantages__content {
+        margin: 50px auto 80px;
+    }
+    .advantage__description {
+        flex-basis: 30.5%;
+        min-width: 206px;
+        padding: 27px 16px 18px;
+    }
+    .advantage__description img {
+        top: 38px;
+        left: 20px;
+    }
+    .image__liner {
+        width: 22px;
+    }
+    .image__system {
+        width: 35px;
+    }
+    .image__tours {
+        width: 39px;
+    }
+    .advantage__caption {
+        margin: 44px 0 10px 4px;
+    }
+    .advantage__text {
+        padding-left: 5px;
+ /*       white-space: pre-wrap;  */
+    }
+    .advantage__text span {
+        display: block;
+    }
+    .cruises__heading {
+        margin: 91px auto 0;
+    }
+    .cruises__content {
+        margin: 35px auto 84px;
+    }
+    .cruise {
+        min-width: 309px;
+        min-height: 386px;
+        margin: 15px calc((100% - 618px)/4);
+    }
+    .cruise__caption {
+        left: 35px;
+        bottom: 28px;
+    }
+    .cruise__description {
+        width: 309px;
+        min-height: 386px;
+        padding: 32px 35px;
+    }
+    .description__btn {
+        width: 100%;
+        padding: 8px 0;
+    }
+    .booking__content {
+        padding: 40px 0 50px;
+    }
+    .booking__description {
+        flex-basis: 100%;
+        margin-top: 42px;
+        margin-bottom: 52px;
+        text-align: center;
+    }
+    .booking__title {
+        font-size: 34px;
+        line-height: 51px;
+        margin: 6px 0;
+    }
+    .booking__text {
+        width: 352px;
+        margin: 0 auto;
+        padding-right: initial;
+    }
+    .form {
+        padding: 44px 50px;
+        margin-bottom: 50px;
+    }
+    .form__caption {
+        margin-bottom: 14px;
+    }
+    .text__form, .text__tel, .text__email, .btn__contact {
+        margin: 10.6px auto;
+    }
+    .form__text {
+        margin-top: 8px;
+    }
+    .contacts__main {
+        padding: 100px 0;
+    }
+    .contacts__content {
+        flex-basis: 47.79%;
+    }
+    .contact {
+        margin-top: 30px;
+    }
+    .address span {
+        margin-left: 28px;
+    }
+    iframe {
+        flex-basis: 47.79%;
+        height: 335px;
+    }
+    .social li {
+        margin: 0 8px;
+    }
+    .footer__social li:last-child {
+        margin-right: -3px;
+    }
+    .footer__logo, .footer__menu {
+        margin-top: -4px;
+    }
+    .footer__social_item a::before {
+        width: 16px;
+        height: 16px;
+        -webkit-background-size: contain;
+        background-size: contain;
+    }
+}
+
+@media (max-width: 767px) {
+    .heading {
+        letter-spacing: -1.5px;
+    }
+    .header__basic {
+        top: 21px;
+    }
+    .header__menu {
+        position: absolute;
+        top: -21px;
+        right: -5.5%;
+        left: -5.5%;
+        height: 299px;
+        background: #F9FBFD;
+        z-index: 5;
+        display: none;
+    }
+    .header__menu .menu__item_link {
+        font-size: 18px;
+        line-height: 22px;
+        color: #011C40;
+    }
+    .header__menu li {
+        padding-left: 5.5%;
+        margin: 21.5px 0;
+        display: block;
+    }
+    .header__menu li:first-child {
+        margin-top: 88px;
+    }
+    .menu-smart-label-open {
+        display: initial;
+    }
+    #menu-smart:checked ~ .header__menu {
+        display: initial;
+    }
+    #menu-smart:checked ~ .menu-smart-label-close {
+        display: initial;
+    }
+    #menu-smart:checked ~ .header__logo_open {
+        display: initial;
+        z-index: 10;
+    }
+    #menu-smart:checked ~ .header__logo {
+        display: none;
+    }
+
+    .screen__main {
+        height: 500px;
+        background-position-y: top;
+        background-size: auto;
+    }
+    .screen__title {
+        font-size: 36px;
+        line-height: 45px;
+        padding-top: 176px;
+    }
+    .subtitle {
+        font-size: 16px;
+        line-height: 22px;
+        padding-right: 90px;
+    }
+    .travels {
+        justify-content: space-around;
+        margin: 52px auto 66px;
+    }
+    .travels__foto {
+        height: 186px;
+        margin-top: 33px;
+    }
+    .travels__heading {
+        margin-bottom: 12px;
+    }
+    .advantages__heading {
+        margin: 56px auto 0;
+    }
+    .advantages__content {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+        -ms-align-items: center;
+        align-items: center;
+        margin: 30px auto 34px;
+    }
+    .advantage__description {
+        flex-basis: 100%;
+        max-width: 360px;
+        min-height: 250px;
+        margin-bottom: 30px;
+    }
+    .advantage__caption {
+        margin: 44px 38px 10px 4px;
+    }
+    .advantage__text span {
+        display: initial;
+    }
+    .cruises__heading {
+        margin: 56px auto 0;
+    }
+    .cruises__content {
+        margin: 15px auto 50px;
+    }
+    .cruise {
+        min-width: 270px;
+        margin: 15px calc((100% - 270px)/2);
+    }
+    .cruise__caption {
+        left: 25px;
+        bottom: 20px;
+    }
+    .cruise__description {
+        width: 270px;
+        padding: 32px 25px;
+    }
+    .booking__content {
+        padding: 0;
+    }
+    .booking__description {
+        margin-bottom: 36px;
+    }
+    .booking__title {
+        font-size: 24px;
+        line-height: 31px;
+        margin: 15px 0;
+    }
+    .booking__text {
+        width: 100%;
+        max-width: 257px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .form {
+        max-width: 290px;
+        min-height: 460px;
+        flex-basis: 100%;
+        padding: 34px 30px;
+        margin-bottom: 64px;
+    }
+    .form__caption {
+        text-align: center;
+    }
+    .text__form, .text__tel, .text__email, .btn__contact {
+        margin: 9.6px auto;
+    }
+    .form__text {
+        margin-top: 12px;
+        padding-left: 24px;
+        line-height: 10px;
+    }
+    .form__text input + span {
+        position: absolute;
+        width: 20px;
+        margin-left: -22px;
+    }
+    .contacts__main {
+        justify-content: space-around;
+        padding: 60px 0;
+    }
+    iframe {
+        flex-basis: 100%;
+        max-width: 300px;
+        height: 316px;
+        margin-top: 43px;
+    }
+    .contacts__content {
+        flex-basis: 100%;
+        max-width: 500px;
+        margin-top: -4px;
+        order: -1;
+    }
+    .contacts__caption {
+        line-height: 27px;
+    }
+    .footer__logo {
+        margin-bottom: 18.5px;
+    }
+    .footer__content, .footer__nav {
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        -o-flex-direction: column;
+        flex-direction: column;
+        -ms-align-items: flex-start;
+        align-items: flex-start;
+    }
+    .footer__content {
+        margin: 42px auto;
+    }
+    .logo img {
+        width: 42px;
+        height: 22px;
+    }
+    .footer__menu {
+        margin-top: -10px;
+    }
+    .footer__menu li {
+        display: block;
+        margin: 13.5px 0;
+    }
+    .footer__social {
+        margin-top: 11.5px;
+    }
+    .social li:first-child {
+        margin-left: -3.5px;
+    }
+}
